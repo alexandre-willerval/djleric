@@ -10,6 +10,12 @@ development and testing purposes, just clone the current Github repository.
 git clone https://github.com/alexandre-willerval/djleric/
 ```
 
+If you to recreate the same full dev environment as I have, you can add a "template-grayscale" directory.
+```
+mkdir template-grayscale
+git clone https://github.com/BlackrockDigital/startbootstrap-grayscale template-grayscale
+```
+
 ## Built With
 
 * [Grayscale](https://github.com/BlackrockDigital/startbootstrap-grayscale) - 
