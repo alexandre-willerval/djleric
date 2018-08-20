@@ -1,0 +1,108 @@
+html {
+	height: 100%;
+}
+
+body {
+	margin: 0px;
+	background-image: url(../images/fond.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 100%;
+}
+
+#titre h1 {
+	color: CornflowerBlue;
+	text-align: center;
+	margin: 0px;
+	font-size: 4em;
+	font-style: italic;
+	font-family: "Georgia";
+	background-color: rgba(255, 255, 255, 0.8);
+}
+
+#contenu{
+	padding: 0px;
+	margin: 0px 200px;
+	background-color: rgba(255, 255, 255, 0.8);
+}
+
+#contenu.flex {
+	display: flex;
+	justify-content: space-around;
+}
+
+#menu {
+	background-color: black;
+	padding: 20px 200px 10px 200px;
+}
+
+#menu ul {
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+	display: flex;
+	justify-content: center;
+}
+
+#menu a {
+	display: block;
+	padding: 2px 40px;
+	color: CornflowerBlue;
+	border-top: 4px solid CornflowerBlue;
+	border-bottom: 4px solid CornflowerBlue;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-family: "Arial";
+}
+
+#menu a.active, #menu a:hover {
+	background-color: CornflowerBlue;
+	color: white;
+}
+
+/*
+.formulaire ul {
+    list-style-type: none;
+	padding: 0px;
+	margin: 0px;
+}
+
+.formulaire li {
+	padding: 1px 0px;
+}
+
+.formulaire label {
+    display: none;
+}
+
+.formulaire h3 {
+	margin: 0px;
+	padding-bottom: 4px;
+	color: DarkOrange;
+	font-size: 2em;
+	font-weight: bold;
+	font-style: italic;
+	font-family: "Georgia";
+}
+
+.formulaire .field {
+	width: 400px;
+	border: 1px solid white;
+	background-color: lightblue;
+	font-size: 1em;
+	font-weight: bold;
+	padding: 4px;
+	font-family: "Arial";
+}
+
+.formulaire .button {
+	border: none;
+	background-color: DarkOrange;
+	font-family: "Arial";
+	font-weight: bold;
+	font-size: 1em;
+	padding: 8px;
+	margin-left: 324px;
+	cursor: pointer;
+}
+*/
