@@ -1,0 +1,344 @@
+html, body {
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+	font-family: arial;
+}
+
+div {
+	display: flex;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+	display: flex;
+	align-items: center;
+}
+
+ul li {
+	font-size: 15px;
+}
+
+ul li a {
+	text-decoration: none;
+}
+
+ul li a:hover {
+	text-decoration: underline;
+}
+
+#wrap {
+	justify-content: space-between;
+	flex-direction: column;
+	height: 100%;
+}
+
+#header {
+	justify-content: flex-end;
+	height: 70px;
+}
+
+#header ul li {
+	padding-right: 25px;
+}
+
+#header ul li a {
+	color: rgb(34, 34, 34);
+}
+
+#header ul li img {
+	width: 20px;
+}
+
+#header ul li img.big {
+	width: 35px;
+}
+
+#header div.popup {
+	box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 10px 0px;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	position: absolute;
+	top: 65px;
+	right: 25px;
+	background-color: white;
+	border-radius: 2px;
+}
+
+#header div.popup div.arrow {
+	border-bottom: 10px solid rgba(0, 0, 0, 0.2);
+	border-right: 10px solid transparent;
+	border-left: 10px solid transparent;
+	position: absolute;
+	top: -10px;
+}
+
+#header div.popup div.arrow  div{
+	border-bottom: 8px solid white;
+	border-right: 8px solid transparent;
+	border-left: 8px solid transparent;
+	position: absolute;
+	top: 2px;
+	right: -8px;
+}
+
+#header #appli div.arrow {
+	right: 105px;
+}
+
+#header #notif div.arrow {
+	right: 60px;
+}
+#header #notif div.arrow  div{
+	border-bottom: 8px solid rgb(238, 238, 238);
+}
+
+#header #user div.arrow {
+	right: 7px;
+}
+
+#header #appli table.content {
+	margin: 20px;
+}
+
+#header #appli table.content td {
+	text-align: center;
+}
+
+#header #appli table.content a {
+	display: block;
+	border: 1px solid white;
+	border-radius: 2px;
+	text-decoration: none;
+	color: black;
+	width: 94px;
+	margin: 8px 2px;
+}
+
+#header #appli table.content a:hover {
+	border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+#header #appli table.content img {
+	width: 70px;
+}
+
+#header #appli table.content a p {
+	font-size: 15px;
+	margin: 0px;
+	height: 21px;
+}
+
+#header #appli div.plus a {
+	display: block;
+	background-color: rgb(245, 245, 245);
+	text-align: center;
+	font-size: 15px;
+	padding: 12px;
+	width: 100%;
+	color: rgba(0, 0, 0, 0.87);
+	text-decoration: none;
+	margin: none;
+}
+
+#header #notif div.content {
+	background-color: rgb(238, 238, 238);
+	text-align: center;
+	padding: 20px;
+	display: block;
+}
+
+#header #notif div.content a#params {
+	display: block;
+	float: left;
+}
+
+#header #notif div.content a#params img {
+	width: 26px;
+}
+
+#header #notif div.content p {
+	margin: 80px 40px;
+	font-size: 14px;
+	color: rgb(170, 170, 170);
+}
+
+#header #notif div.plus {
+	background-color: rgb(243, 243, 243);
+	border-top: 1px solid rgb(233, 233, 233);
+	display: block;
+	text-align: center;
+	padding: 10px;
+}
+
+#header #notif div.plus p {
+	font-size: 12px;
+	color: rgba(0, 0, 0, 0.54);
+	margin: 4px 0px;
+}
+
+#header #notif div.plus a {
+	display: block;
+	width: 28px;
+	margin: 0px auto;
+}
+
+#header #notif div.plus a:hover {
+	box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 10px 0px;
+}
+
+#header #notif div.plus img {
+	width: 20px;
+	margin-top: 4px;
+}
+
+#header #user div.content {
+	display: block;
+	font-size: 14px;
+	padding: 20px;
+	width: 350px;
+}
+
+#header #user div.content img {
+	width: 105px;
+	float: left;
+	margin-right: 20px;
+}
+
+#header #user div.content h3 {
+	font-weight: bold;
+	margin: 0px;
+}
+
+#header #user div.content p {
+	color: rgb(102, 102, 102);
+	margin: 0px 0px 10px 0px;
+}
+
+#header #user div.content a {
+	text-decoration: none;
+	color: rgb(51, 102, 204);
+}
+
+#header #user div.content a:hover {
+	text-decoration: underline;
+}
+
+#header #user div.content button {
+	background-color: rgb(77, 144, 254);
+	color: rgb(255, 255, 255);
+	border: 1px solid rgb(48, 121, 237);
+	border-radius: 2px;
+	padding: 5px 10px;
+	margin: 15px 0px 0px 0px;
+	font-weight: bold;
+	font-size: 14px;
+	display: block;
+}
+
+#header #user div.content button:hover {
+	background-color: rgb(53, 122, 232);
+	border: 1px solid rgb(47, 91, 183);
+}
+
+#header #user div.plus {
+	background-color: rgb(245, 245, 245);
+	justify-content: space-around;
+}
+
+#header #user div.plus button {
+	background-color: rgb(248, 248, 248);
+	border: 1px solid rgb(198, 198, 198);
+	border-radius: 2px;
+	padding: 5px 10px;
+	margin: 15px 0px;
+	color: rgb(102, 102, 102);
+	font-size: 14px;
+}
+
+#header #user div.plus button:hover {
+	box-shadow: 0 1px 0 rgba(0,0,0,.15);
+	background-color: rgb(251, 251, 251);
+}
+
+#main {
+	flex-direction: column;
+	align-items: center;
+}
+
+#logo {
+	width: 300px;
+	position: relative;
+}
+
+#logo p {
+	color: rgb(66, 133, 244);
+	font-size: 17px;
+	position: absolute;
+	bottom: 0px;
+	right: 10px;
+	margin: 0px;
+	padding: 0px;
+}
+
+#search {
+	text-align: center;
+}
+
+#search input {
+	width: 580px;
+	height: 44px;
+	margin: 30px 0px;
+	padding: 0px 20px;
+	border: 1px solid rgb(242, 242, 242);
+	border-radius: 2px;
+	box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.16), 0px 0px 0px 1px rgba(0, 0, 0, 0.08);
+	font-size: 16px;
+	font-family: arial;
+}
+
+#search input:hover {
+	box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.2), 0px 0px 0px 1px rgba(0, 0, 0, 0.08);
+}
+
+#search button {
+	margin: 11px 4px;
+	padding: 0px 16px;
+	height: 38px;
+	background-color: rgb(242, 242, 242);
+	border: 1px solid rgb(242, 242, 242);
+	border-radius: 2px;
+	color: rgb(117, 117, 117);
+	font-size: 14px;
+	font-weight: bold;
+	font-family: arial;
+}
+
+#search button:hover {
+	background-color: rgb(248, 248, 248);
+	border: 1px solid rgb(198, 198, 198);
+	color: rgb(34, 34, 34);
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 1px 0px;
+}
+
+#footer {
+	justify-content: space-between;
+	height: 44px;
+	background-color: rgb(242, 242, 242);
+	border-top-style: solid;
+	border-top-width: 1px;
+	border-top-color: rgb(228, 228, 228);
+}
+
+#footer ul.left li {
+	padding-left: 32px;
+}
+
+#footer ul.right li {
+	padding-right: 32px;
+}
+
+#footer ul li a {
+	color: rgb(102, 102, 102);
+}
