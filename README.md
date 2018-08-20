@@ -11,7 +11,7 @@ mkdir site_eric
 git clone https://github.com/alexandre-willerval/djleric/ site_eric
 ```
 
-If you to recreate the same full dev environment as I have, you can add a "template-grayscale" directory.
+If you want to recreate the same full dev environment as I have, you can add a "template-grayscale" directory.
 ```
 cd site_eric
 mkdir template-grayscale
