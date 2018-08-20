@@ -7,11 +7,13 @@ Dev of DJleric's website
 To get a copy of the project up and running on your local machine for 
 development and testing purposes, just clone the current Github repository.
 ```
-git clone https://github.com/alexandre-willerval/djleric/
+mkdir site_eric
+git clone https://github.com/alexandre-willerval/djleric/ site_eric
 ```
 
 If you to recreate the same full dev environment as I have, you can add a "template-grayscale" directory.
 ```
+cd site_eric
 mkdir template-grayscale
 git clone https://github.com/BlackrockDigital/startbootstrap-grayscale template-grayscale
 ```
