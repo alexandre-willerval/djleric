@@ -1,3 +1,4 @@
 #ignore existing github repository: https://github.com/BlackrockDigital/stratbootstrap-grayscale
 template-grayscale/
-
+php/vendor/
+php/credentials.php

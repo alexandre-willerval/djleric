@@ -1,9 +1,21 @@
+<?php
+  require 'credentials.php';
+  $subject = 'Mail de test';
+  $message = 'Le message a correctement été envoyé avec la fonction mail() de PHP depuis une VM Flexible Engine '.strftime ('le %d/%m/%y à %T').' ! :-)';
+  $headers = 'From: ' . $from . "\r\n" .
+    'Reply-To: ' . $from . "\r\n" .
+    'X-Mailer: PHP/' . phpversion();
+  $parameters = '-r ' . $from;
+  $result = mail($to, $subject, $message, $headers, $parameters);
+  $info = $result?"message envoyé":"erreur lors de l'envoi du message";
+?>
+
 <!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Site Eric</title>
+    <title>Test envoi mail en PHP</title>
     
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
@@ -14,17 +26,12 @@
   <body>
     <div class="container">
       <div class="jumbotron mt-5">
-        <h1 class="display-3">Site Eric</h1>
-        <p class="lead">Dev of the brand new website of DJ-Leric !!!</p>
+        <h1 class="display-3">fonction mail() de PHP</h1>
+        <p class="lead"><?php echo $info; ?></p>
         <hr class="my-5">
-        <p>This project is divided into 6 subprojets:</p>
         <p class="lead">
-          <a class="btn btn-primary btn-lg mb-1" href="html/" role="button">from scrach website</a>
-          <a class="btn btn-primary btn-lg mb-1" href="template-grayscale/" role="button">Start Bootstrap "Grayscale" template</a>
-          <a class="btn btn-primary btn-lg mb-1" href="template-djleric/" role="button">Customised "Grayscale" template</a>
-          <a class="btn btn-primary btn-lg mb-1" href="challenge-google/" role="button">Google challenge</a>
-          <a class="btn btn-primary btn-lg mb-1" href="challenge-losslessbest/" role="button">LossLessBest challenge</a>
-          <a class="btn btn-primary btn-lg mb-1" href="php/" role="button">PHP sendmail</a>
+          <a class="btn btn-primary btn-lg mb-1" href="../php" role="button">Retour à l'accueil</a>
+          <a class="btn btn-primary btn-lg mb-1" href="mail.php" role="button">Envoyer un autre mail</a>
         </p>
       </div>
     </div>
